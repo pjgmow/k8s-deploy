@@ -1,0 +1,17 @@
+{
+  "CN": "etcd",
+  "key": {
+    "algo": "ecdsa",
+    "size": 256
+  },
+  "names": [
+    {
+      "C": "CN",
+      "ST": "BeiJing",
+      "L": "BeiJing",
+      "O": "kubernetes",
+      "OU": "System"
+    }
+  ]
+}
+
