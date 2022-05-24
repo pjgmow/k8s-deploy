@@ -1,0 +1,12 @@
+[Unit]
+Description=Kubernetes Kubelet
+
+[Service]
+EnvironmentFile=-/etc/kubernetes/conf/kubelet.conf
+ExecStart=/usr/local/bin/kubelet $KUBE_KUBELET_OPTS
+RestartSec=5
+Restart=on-failure
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

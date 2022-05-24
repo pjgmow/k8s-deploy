@@ -1,0 +1,12 @@
+[Unit]
+Description=Kubernetes Controller Manager
+
+[Service]
+EnvironmentFile=-/etc/kubernetes/conf/kube-controller-manager.conf
+ExecStart=/usr/local/bin/kube-controller-manager $KUBE_CONTROLLER_MANAGER_OPTS
+RestartSec=5
+Restart=on-failure
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Kubernetes Proxy
+
+[Service]
+WorkingDirectory=/var/lib/kube-proxy
+EnvironmentFile=-/etc/kubernetes/conf/kube-proxy.conf
+ExecStart=/usr/local/bin/kube-proxy $KUBE_PROXY_OPTS
+RestartSec=5
+Restart=on-failure
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
