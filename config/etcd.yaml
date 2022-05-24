@@ -1,0 +1,25 @@
+name: __ETCD_NAME__
+data-dir: __ETCD_DATA_DIR__
+listen-client-urls: https://0.0.0.0:2379
+listen-peer-urls: https://0.0.0.0:2380
+enable-v2: false
+initial-advertise-peer-urls: __INITIAL_ADVERTISE_PEER_URLS__
+advertise-client-urls: __ADVERTISE_CLIENT_URLS__
+initial-cluster: __INITIAL_CLUSTER__
+initial-cluster-state: __INITIAL_CLUSTER_STATE__
+initial-cluster-token: __INITIAL_CLUSTER_TOKEN__
+auto-compaction-mode: revision
+auto-compaction-retention: "1"
+max-request-bytes: 10485760
+quota-backend-bytes: 8589934592
+logger: zap
+client-transport-security:
+  cert-file: /etc/kubernetes/tls/etcd.pem
+  key-file: /etc/kubernetes/tls/etcd-key.pem
+  client-cert-auth: true
+  trusted-ca-file: /etc/kubernetes/tls/ca.pem
+peer-transport-security:
+  cert-file: /etc/kubernetes/tls/etcd.pem
+  key-file: /etc/kubernetes/tls/etcd-key.pem
+  client-cert-auth: true
+  trusted-ca-file: /etc/kubernetes/tls/ca.pem
