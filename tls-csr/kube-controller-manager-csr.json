@@ -10,7 +10,7 @@
       "L": "BeiJing",
       "ST": "BeiJing",
       "O": "system:kube-controller-manager",
-      "OU": "System"
+      "OU": "Kubernetes"
     }
   ]
 }
