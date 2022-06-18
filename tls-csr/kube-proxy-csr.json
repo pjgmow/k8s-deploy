@@ -9,8 +9,8 @@
       "C": "CN",
       "ST": "BeiJing",
       "L": "BeiJing",
-      "O": "kubernetes",
-      "OU": "System"
+      "O": "Kubernetes",
+      "OU": "Kubernetes"
     }
   ]
 }
