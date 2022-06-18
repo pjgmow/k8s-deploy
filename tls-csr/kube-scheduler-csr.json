@@ -10,7 +10,7 @@
       "L": "BeiJing",
       "ST": "BeiJing",
       "O": "system:kube-scheduler",
-      "OU": "System"
+      "OU": "Kubernetes"
     }
   ]
 }
