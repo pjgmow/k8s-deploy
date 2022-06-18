@@ -1,5 +1,5 @@
 {
-  "CN": "admin",
+  "CN": "kubernetes-admin",
   "key": {
     "algo": "ecdsa",
     "size": 256
@@ -10,7 +10,7 @@
       "ST": "BeiJing",
       "L": "BeiJing",
       "O": "system:masters",
-      "OU": "System"
+      "OU": "Kubernetes"
     }
   ]
 }
